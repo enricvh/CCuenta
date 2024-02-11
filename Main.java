@@ -1,5 +1,12 @@
+/**
+ * Clase Main que contiene el método principal para ejecutar la aplicación.
+ */
 public class Main {
 
+    /**
+     * Método principal de la aplicación.
+     * @param args Argumentos de la línea de comandos.
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -8,6 +15,11 @@ public class Main {
         operativa_cuenta(cuenta1, 2300.0f);
     }
 
+    /**
+     * Método para realizar operaciones en la cuenta.
+     * @param cuenta1 La cuenta en la que se realizarán las operaciones.
+     * @param cantidad La cantidad a retirar de la cuenta.
+     */
     public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
         double saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
